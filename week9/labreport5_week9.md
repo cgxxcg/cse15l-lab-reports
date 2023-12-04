@@ -13,27 +13,27 @@ Student: <br>
 
 <img width="470" alt="image" src="https://github.com/cgxxcg/cse15l-lab-reports/assets/146875584/c4a13316-65f0-4b78-89b5-327dbdd1a1c6">
 <br>
-I printed out the "count" and "sum" inside the loop, and my count is not incrementing. Another bug is that the count result and sum result are printed together so it looks like
-```112```
-
-but it is actually "1" for count, and "12" for sum. 
+I printed out the "count" and "sum" inside the loop, and my count is not incrementing. Another bug is that the count result and sum result are printed together so it looks like "112", but it is actually "1" for count, and "12" for sum. 
 
 
 Directory Structure: <br>
 <img width="274" alt="image" src="https://github.com/cgxxcg/cse15l-lab-reports/assets/146875584/7533890f-5a08-4e06-bed5-59bc5449085b"> <br>
 For run.sh: <br>
+
 ```
 javac Main.java
 if [ $? -eq 0 ]; then
     java Main
 fi
 ```
+
 <br>
 For input.txt: <br>
 
 ```
 1 2 4 5
 ```
+
 <br>
 For Main.java before fixing the bug: <br>
 
@@ -59,7 +59,8 @@ public class Main {
     }
 }
 ```
-<br>
+
+
 Command line to trigger the bug: <br>
 <img width="480" alt="image" src="https://github.com/cgxxcg/cse15l-lab-reports/assets/146875584/3c8fdb13-b187-420d-9e64-b545c0816094"> <br>
 To fix the bug, I put the count incrementation line inside while loop, so each time we're adding the new element, the count increments too. I also added "\n" and two strings in the print statements for better visualization. <br>
